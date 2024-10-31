@@ -1,6 +1,7 @@
 # H1-Viisikko
 ## Tiivistelmät
 ### Run Salt Command Locally
+- Tärkeimmät tilafunktiot ovat: pkg, file, service, user, cmd.
 
 ### Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
 
