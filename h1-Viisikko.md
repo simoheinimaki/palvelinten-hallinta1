@@ -1,6 +1,6 @@
 # H1
 ## Tiivistelmät
-### Run Salt command locally
+### Run Salt Command Locally
 
 ### Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
 
