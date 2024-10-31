@@ -1,8 +1,10 @@
 # H1
 ## Tiivistelmät
+### Run Salt command locally
 
+### Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
 
-
+### Raportin kirjoittaminen
 
 ## Lähteet
 Karvinen, Tero. 2023. [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/). Luettu: 31.10.2024
