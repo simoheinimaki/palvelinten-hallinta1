@@ -1,7 +1,16 @@
 # H1-Viisikko
 ## Tiivistelmät
 ### Run Salt Command Locally
+- Salt:ia käytetään useiden slave-tietokoneiden hallintaan.
 - Tärkeimmät tilafunktiot ovat: pkg, file, service, user, cmd.
+- Linuxissa kaikki asetukset ovat tekstitiedostoja
+
+#### Asentaminen Linux:
+
+        $ sudo apt-get update
+        $ sudo apt-get -y install salt-minion
+
+  
 
 ### Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
 
