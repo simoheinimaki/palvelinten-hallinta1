@@ -5,13 +5,22 @@
 - Tärkeimmät tilafunktiot ovat: pkg, file, service, user, cmd.
 - Linuxissa kaikki asetukset ovat tekstitiedostoja
 
-#### Salt Slave asentaminen Linux:
+Salt Slave asentaminen Linux:
 
         $ sudo apt-get update
         $ sudo apt-get -y install salt-minion
 
-  ### Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
+### Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
+- Slaven täytyy tietää masterin osoite.
+- Joka slavella oltava eri nimi.
+- Slave yhdistettävä masteriin IP-osoitteella.
+- Master hyväksyy Slave key:n
+- Jos Slave vastaa se toimii.
+
+  Salt Master asentaminen Linux:
   
+        $ sudo apt-get update
+        $ sudo apt-get -y install salt-master
 
 ### Raportin kirjoittaminen
 
