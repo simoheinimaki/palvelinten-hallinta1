@@ -1,5 +1,5 @@
 # H1-Viisikko
-Käytän tehtävässä Debian 12 Bookworn käyttöliittymää Vagrantilla.
+Käytän tehtävässä Debian 12 Bookwormia Vagrantilla.
 ## Tiivistelmät
 ### Run Salt Command Locally
 - Salt:ia käytetään useiden slave-tietokoneiden hallintaan.
@@ -42,20 +42,26 @@ Käytän tehtävässä Debian 12 Bookworn käyttöliittymää Vagrantilla.
 - Viittaa lähteisiin.
 - Plagiointi rangaistavaa.
 
-## Saltin asentaminen (Debian 12)
+## Saltin asentaminen ja demonstrointi(Debian 12)
 
 Aloitan asentamalle Debian 12 virtuaalikoneelleni Saltin [Salt Project - Install Guide](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-rpm.html#install-rpm):n mukaan. 
 Ohjeessa käytetään "curl" komentoa. Jotta voin suorittaa asennuksen täysin ohjeiden mukaan, asennan ensin curlin koneelleni.
 
     sudo apt install curl
 
-Tämän jälkeen jatkan saltin asennusta lataamalla repon
+Tämän jälkeen jatkan saltin asennusta lataamalla public keyn ja repon:
 ![kuva](https://github.com/user-attachments/assets/174b05bb-b10c-4d76-a34b-1b839942b4fb)
+![kuva](https://github.com/user-attachments/assets/bb230a8a-774b-4711-b674-0f2bddf9d3f9)
+Sitten päivitän metadatan.
 
+    sudo apt update
 
+### b) Salt-minion asennus
 
-Syötän terminaaliin komennon:
-curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.repo | sudo tee /etc/yum.repos.d/salt.repo
+    sudo apt-get install salt-minion
+
+#### Tärkeimmät tilafunktiot
+Käytän tilafunktioiden demonstroimiseen komentoja sivulta: [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/)
 
 
 ## Lähteet
