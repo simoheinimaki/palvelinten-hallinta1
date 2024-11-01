@@ -41,6 +41,11 @@
 - Viittaa lähteisiin.
 - Plagiointi rangaistavaa.
 
+## Saltin asentaminen ja demonstrointi (Debian 12)
+
+Aloitan asentamalle Debian 12 virtuaalikoneelleni Salt slaven [Salt Project - Install Guide](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-rpm.html#install-rpm):n mukaan
+
+
 ## Lähteet
 Karvinen, Tero. 2023. [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/). Luettu: 31.10.2024
 
