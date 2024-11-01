@@ -63,6 +63,13 @@ Sitten päivitän metadatan.
 #### Tärkeimmät tilafunktiot
 Käytän tilafunktioiden demonstroimiseen komentoja sivulta: [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/)
 
+##### pkg.
+
+    sudo salt-call --local -l info state.single pkg.installed tree
+
+![kuva](https://github.com/user-attachments/assets/73cc98cc-9648-4995-9ced-5a8960002285)
+
+Komennolla Tarkastettiin onko "Tree" asennettuna. Jonka jälkeen "Tree" asennettiin tietokoneelle.
 
 ## Lähteet
 Karvinen, Tero. 2023. [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/). Luettu: 31.10.2024
