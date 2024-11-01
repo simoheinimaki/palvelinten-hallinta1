@@ -63,14 +63,45 @@ Sitten päivitän metadatan.
 #### Tärkeimmät tilafunktiot
 Käytän tilafunktioiden demonstroimiseen komentoja sivulta: [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/)
 
-##### pkg.
+##### pkg
 
     sudo salt-call --local -l info state.single pkg.installed tree
 
 ![kuva](https://github.com/user-attachments/assets/73cc98cc-9648-4995-9ced-5a8960002285)
 
-Komennolla Tarkastettiin onko "Tree" asennettuna. Jonka jälkeen "Tree" asennettiin tietokoneelle.
+Komennolla Tarkastetaan onko "Tree" asennettuna. Jos ei, "Tree" asennetaann tietokoneelle.
 
+##### file
+
+    sudo salt-call --local -l info state.single file.managed /tmp/hellotero
+
+![kuva](https://github.com/user-attachments/assets/e586026c-bccb-428a-ab5a-33d9107b27b6)
+
+Komennolla Tarkastetaan onko tiedostoa "/tmp/hellotero" olemassa. Jos ei, tiedosto luodaan automaattisesti.
+
+##### service
+
+    sudo salt-call --local -l info state.single service.running apache2 enable=True
+
+![kuva](https://github.com/user-attachments/assets/75b438e7-f8e5-4633-b7e4-5f87f163263d)
+
+Komennolla voi käynnistää daemoneita uudestaan. Komento epäonnistui, sillä minulla ei ole apache2 ollenkaan ladattuna.
+
+##### user
+
+    sudo salt-call --local -l info state.single user.present terote08
+
+![kuva](https://github.com/user-attachments/assets/9711c5f4-3b86-4b0a-ac1e-da0b1bd9fdf7)
+
+Komennolla Tarkastetaan onko käyttäjää "terote08" olemassa. Jos ei, käyttäjä luodaan.
+
+##### cmd
+
+    sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo"
+
+![kuva](https://github.com/user-attachments/assets/2c78a209-a49c-472d-b3b8-6c6e5d971c4f)
+
+Komennolla ajettiin komento "touch /tmp/foo".
 ## Lähteet
 Karvinen, Tero. 2023. [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/). Luettu: 31.10.2024
 
