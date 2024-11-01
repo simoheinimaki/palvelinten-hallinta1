@@ -60,7 +60,8 @@ Sitten päivitän metadatan.
 
     sudo apt-get install salt-minion
 
-#### Tärkeimmät tilafunktiot
+### c) Tärkeimmät tilafunktiot
+
 Käytän tilafunktioiden demonstroimiseen komentoja sivulta: [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/)
 
 ##### pkg
